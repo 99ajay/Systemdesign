@@ -1,16 +1,14 @@
 import java.io.*;
 import java.util.*;
 
-class OOPS1 {
+class OOPS5 {
   
   static class Person {
       int age;
       String name;
       
       void sayHi(){
-         // int age = 200;
-
-          System.out.println(this.name + "[" + age + "] says hi.");
+          System.out.println(this.name + "[" + this.age + "] says hi.");
       }
   }
   
@@ -28,13 +26,21 @@ class OOPS1 {
       p2.name = "B";
       p2.sayHi();
       
-      Person p3 = p2;
-      p3.sayHi();
-      
-      p2.name = "C";
+      swap(p1, p2);
+
+      p1.sayHi();
       p2.sayHi();
-      p3.sayHi();
       
       
+  }
+
+  static void swap(Person a, Person b){
+    int tage = a.age;
+    a.age = b.age;
+    b.age = tage;
+
+    String tname = a.name;
+    a.name = b.name;
+    b.name = tname;
   }
 }
