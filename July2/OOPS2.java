@@ -12,9 +12,6 @@ class OOPS2{
     Point tl;
     Point br;
   }
-  
-  
-    
   public static void main(String[] args) throws NumberFormatException, IOException {
       Rectangle r = new Rectangle(); // instance, ref
       r.tl = new Point(); // inst, ref
