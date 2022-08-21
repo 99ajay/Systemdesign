@@ -3,7 +3,7 @@ import java.util.*;
 
 class OOPS1 {
   
-  static class Person {
+  static class Person{
       int age;
       String name;
       
